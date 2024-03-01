@@ -46,3 +46,12 @@
 #     return people_users
 # print(people())
 
+# my_list = [1,2,3,4,5] #6
+# power=2
+#
+# def power_list(lst,power):
+#     power_list=[num**power for num in lst]
+#     return power_list
+# result=power_list(my_list,power)
+# print(result)
+
