@@ -38,4 +38,11 @@
 # print(list_remove_numbers(my_list,number_to_remove))
 # print(my_list)
 
+# user={"Игорь","Алёна","Вова","Гриша","Варя"} #5
+# user1={"Игорь","Варя","Алёна","Петя","Вася"}
+#
+# def people():
+#     people_users=user.intersection(user1)
+#     return people_users
+# print(people())
 
