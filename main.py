@@ -1,12 +1,13 @@
-# list=[1,2,3,4,5] #1
+# my_list=[1,2,3,4,5] #1
 # def list_numbers(lst):
 #     result=1
 #     for num in lst:
 #         result *=num
 #     return result
-# print(list_numbers(list))
+# print(list_numbers(my_list))
 
-# list=[1,2,3,4,5,6,7,8,9]#2
+
+# my_list=[1,2,3,4,5,6,7,8,9]#2
 # operation=("Минимум,Максимум")
 # def list_numbers(lst):
 #     max_value=max(lst)
@@ -14,17 +15,23 @@
 #     min_value=min(lst)
 #     print("Минимум",min_value)
 #     return max_value,min_value
-# print(list_numbers(list))
-
-# my_list =[1,2,3,4,5,6,7,8,9]#3
-#
-# def list_numbers(lst):
-#     even_numbers=[]
-#     for num in lst:
-#         if num%2==0:
-#             even_numbers.append(num)
-#     return even_numbers
 # print(list_numbers(my_list))
+
+# import random #3
+#
+# def is_prime(numbers:int)->bool:
+#      is_prime_numbers=True
+#
+#      for num in range(2,numbers):
+#          if numbers % num== 0:
+#              is_prime_numbers= False
+#              break
+#      return is_prime_numbers
+# numbers=[random.randint(1,20) for i in range(10)]
+# print(numbers)
+
+
+
 
 # my_list = [1, 2, 3, 4, 5]#4
 # number_to_remove=5
@@ -38,13 +45,15 @@
 # print(list_remove_numbers(my_list,number_to_remove))
 # print(my_list)
 
-# user={"Игорь","Алёна","Вова","Гриша","Варя"} #5
-# user1={"Игорь","Варя","Алёна","Петя","Вася"}
-#
-# def people():
-#     people_users=user.intersection(user1)
-#     return people_users
-# print(people())
+user = {"Игорь", "Алёна", "Вова", "Гриша", "Варя"}
+user1 = {"Игорь", "Варя", "Алёна", "Петя", "Вася"}
+
+def merge_lists():
+    merged_users = user | user1
+    return merged_users
+
+print(merge_lists())
+
 
 # my_list = [1,2,3,4,5] #6
 # power=2
@@ -54,4 +63,3 @@
 #     return power_list
 # result=power_list(my_list,power)
 # print(result)
-
