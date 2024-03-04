@@ -45,11 +45,11 @@
 # print(list_remove_numbers(my_list,number_to_remove))
 # print(my_list)
 
-user = {"Игорь", "Алёна", "Вова", "Гриша", "Варя"}
-user1 = {"Игорь", "Варя", "Алёна", "Петя", "Вася"}
+user = ["Игорь", "Алёна", "Вова", "Гриша", "Варя"]
+user1 = ["Игорь", "Варя", "Алёна", "Петя", "Вася"]
 
 def merge_lists():
-    merged_users = user | user1
+    merged_users = user + user1
     return merged_users
 
 print(merge_lists())
